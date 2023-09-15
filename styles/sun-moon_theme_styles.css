@@ -1,0 +1,43 @@
+.theme__box {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 30px auto;
+}
+.sun-moon__theme {
+  cursor: pointer;
+  overflow: hidden;
+  border: 1px solid rgb(21, 0, 255);
+  border: none;
+  position: relative;
+  width: 60vw;
+  background-image: linear-gradient(#66ffed, #ffeeb2);
+}
+.s-m_bac__l {
+  transition: opacity 1s ease;
+  background-image: linear-gradient(#2b4485, #afcaff);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.switch {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  transition: transform 1s ease;
+}
+.switch > img {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 1s ease;
+}
+.switch__m {
+  opacity: 0;
+}
