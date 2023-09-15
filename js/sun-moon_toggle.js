@@ -6,17 +6,29 @@ const mySwitch = document.querySelector(".switch");
 
 let isDarkMode = false;
 
+// нижче це не треба
+const text = document.querySelector("#text");
+const body = document.body;
+//
 function myFunction() {
   if (isDarkMode) {
     btnBac.style.opacity = "1";
     sun.style.opacity = "0";
     moon.style.opacity = "1";
     mySwitch.style.transform = "translateX(100%)";
+    // нижче це не треба
+    text.style.color = "white";
+    body.style.backgroundColor = "black";
+    //
   } else {
     btnBac.style.opacity = "0";
     sun.style.opacity = "1";
     moon.style.opacity = "0";
     mySwitch.style.transform = "translateX(0%)";
+    // нижче це не треба
+    text.style.color = "black";
+    body.style.backgroundColor = "white";
+    //
   }
   isDarkMode = !isDarkMode;
 }
