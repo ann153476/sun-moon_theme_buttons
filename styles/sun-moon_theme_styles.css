@@ -16,7 +16,7 @@
   box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
 }
 .s-m_bac__l {
-  /* transition: opacity 1s ease; */
+  transition: opacity 1s ease;
   background-image: url("../img/sun-moon_theme_svg/Star1.svg"),
     url("../img/sun-moon_theme_svg/Star2.svg"),
     url("../img/sun-moon_theme_svg/Star3.svg"),
@@ -41,7 +41,7 @@
   border-radius: 50%;
   width: 50%;
   height: 100%;
-  /* transition: transform 1s ease; */
+  transition: transform 1s ease;
 }
 .switch > img {
   position: absolute;
@@ -49,7 +49,7 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
-  /* transition: opacity 1s ease; */
+  transition: opacity 1s ease;
 }
 .switch__m {
   opacity: 0;
