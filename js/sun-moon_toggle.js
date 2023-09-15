@@ -4,43 +4,49 @@ const sun = document.querySelector(".switch__s");
 const moon = document.querySelector(".switch__m");
 const mySwitch = document.querySelector(".switch");
 
-let isDarkMode = false;
-
-// нижче це не треба
 const text = document.querySelector("#text");
 const body = document.body;
-//
-function myFunction() {
+
+// Оголосіть isDarkMode як true або false, в залежності від значення в localStorage
+let isDarkMode = localStorage.getItem("isDarkMode") === "true" || false;
+
+function myFunction(chek) {
+  console.log(chek, "<<<,,,");
+  if (chek) {
+    // Перевіряємо, яку тему включити, і змінюємо значення isDarkMode
+    isDarkMode = !isDarkMode;
+
+    // Зберігаємо значення isDarkMode в localStorage
+    localStorage.setItem("isDarkMode", isDarkMode);
+  }
+
   if (isDarkMode) {
     btnBac.style.opacity = "1";
     sun.style.opacity = "0";
     moon.style.opacity = "1";
     mySwitch.style.transform = "translateX(100%)";
-    // нижче це не треба
     text.style.color = "white";
     body.style.backgroundColor = "black";
-    //
   } else {
     btnBac.style.opacity = "0";
     sun.style.opacity = "1";
     moon.style.opacity = "0";
     mySwitch.style.transform = "translateX(0%)";
-    // нижче це не треба
     text.style.color = "black";
     body.style.backgroundColor = "white";
-    //
   }
-  isDarkMode = !isDarkMode;
 }
 
-let wightToggle;
+let heightToggle;
 function functionStart() {
-  wightToggle = toggleButton.offsetWidth * 0.45;
-  toggleButton.style.height = wightToggle + "px";
-  toggleButton.style.borderRadius = wightToggle / 2 + "px";
-  btnBac.style.borderRadius = wightToggle / 2 + "px";
-  console.log(wightToggle);
-  myFunction();
+  heightToggle = toggleButton.offsetWidth * 0.45;
+  toggleButton.style.height = heightToggle + "px";
+  toggleButton.style.borderRadius = heightToggle / 2 + "px";
+  btnBac.style.borderRadius = heightToggle / 2 + "px";
+  myFunction(false);
 }
+
 toggleButton.addEventListener("click", myFunction);
 document.addEventListener("DOMContentLoaded", functionStart);
+
+// Встановлюємо початковий стан сторінки відповідно до значення в localStorage

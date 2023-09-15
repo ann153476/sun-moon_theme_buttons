@@ -14,7 +14,6 @@ body {
   height: 100vh;
   position: fixed;
 }
-body,
-#text {
+/* .transition {
   transition: all 1s linear;
-}
+} */
