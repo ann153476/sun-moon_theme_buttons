@@ -16,7 +16,7 @@ body {
 }
 #text {
   line-height: 1.5;
-  font: 2em sans-serif;
+  font-size: 30px;
 }
 /* .transition {
   transition: all 1s linear;
