@@ -13,19 +13,40 @@
   border: none;
   position: relative;
   width: 60vw;
-  background-image: linear-gradient(#66ffed, #ffeeb2);
+  background-image: url("../img/sun-moon_theme_svg/Union.svg"),
+    url("../img/sun-moon_theme_svg/Union.svg"),
+    url("../img/sun-moon_theme_svg/Union.svg"),
+    linear-gradient(#66ffed, #ffeeb2);
+  background-size: 26%, 17%, 12%, auto;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: top 20% right 30%, bottom 20% right 40%,
+    bottom 40% right 10%, center;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
 }
 .s-m_bac__l {
   transition: opacity 1s ease;
-  background-image: linear-gradient(#2b4485, #afcaff);
+  background-image: url("../img/sun-moon_theme_svg/Star1.svg"),
+    url("../img/sun-moon_theme_svg/Star2.svg"),
+    url("../img/sun-moon_theme_svg/Star3.svg"),
+    url("../img/sun-moon_theme_svg/Star4.svg"),
+    url("../img/sun-moon_theme_svg/Star5.svg"),
+    linear-gradient(#2b4485, #afcaff);
+  background-repeat: no-repeat;
+  background-size: 11%, 6%, 12%, 4%, 8%, auto;
+  background-position: top 10% left 30%, bottom 20% left 40%,
+    bottom 40% left 10%, top 15% left 10%, top 30% left 50%, center;
   width: 100%;
   height: 100%;
   opacity: 0;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
 }
 .switch {
   position: absolute;
-  top: 0;
+  top: 1.5%;
   left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
   width: 50%;
   height: 100%;
   transition: transform 1s ease;
@@ -35,7 +56,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   transition: opacity 1s ease;
 }
 .switch__m {

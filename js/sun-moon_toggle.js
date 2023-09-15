@@ -26,6 +26,7 @@ function functionStart() {
   wightToggle = toggleButton.offsetWidth * 0.45;
   toggleButton.style.height = wightToggle + "px";
   toggleButton.style.borderRadius = wightToggle / 2 + "px";
+  btnBac.style.borderRadius = wightToggle / 2 + "px";
   console.log(wightToggle);
   myFunction();
 }
