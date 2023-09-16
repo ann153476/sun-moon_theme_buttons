@@ -1,10 +1,12 @@
 .sun-moon__theme {
+  /* change only width for change size of toggle */
+  width: 30vw;
+  /*  */
   cursor: pointer;
   overflow: hidden;
   border: 1px solid rgb(21, 0, 255);
   border: none;
   position: relative;
-  width: 60vw;
   background-image: url("../img/sun-moon_theme_svg/Union.svg"),
     url("../img/sun-moon_theme_svg/Union.svg"),
     url("../img/sun-moon_theme_svg/Union.svg"),
@@ -16,7 +18,6 @@
   box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
 }
 .s-m_bac__l {
-  transition: opacity 1s ease;
   background-image: url("../img/sun-moon_theme_svg/Star1.svg"),
     url("../img/sun-moon_theme_svg/Star2.svg"),
     url("../img/sun-moon_theme_svg/Star3.svg"),
@@ -41,7 +42,6 @@
   border-radius: 50%;
   width: 50%;
   height: 100%;
-  transition: transform 1s ease;
 }
 .switch > img {
   position: absolute;
@@ -49,7 +49,6 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
-  transition: opacity 1s ease;
 }
 .switch__m {
   opacity: 0;
