@@ -19,15 +19,3 @@ body {
   line-height: 1.5;
   font-size: 30px;
 }
-/* transition  при оновленні сторінки*/
-.transition .sun-moon__theme,
-.transition .s-m_bac__l,
-.transition .switch > img,
-.transition .s-m_bac__l,
-.transition .switch,
-.transition {
-  transition: all 1s linear;
-}
-.transition .sun-moon__theme {
-  transition: opasity 1s linear;
-}
