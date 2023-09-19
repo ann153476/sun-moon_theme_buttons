@@ -7,7 +7,7 @@
   overflow: hidden;
   background-size: cover;
   background-position: center;
-  background-image: url("../img/sun-moon_forest_svg/light.svg");
+  background-image: url("../sun-moon_forest/sun-moon_forest_svg/light.svg");
 }
 .s-m_bac__forest {
   opacity: 0;
@@ -15,7 +15,7 @@
   height: 100%;
   background-size: cover;
   background-position: center;
-  background-image: url("../img/sun-moon_forest_svg/dark.svg");
+  background-image: url("../sun-moon_forest/sun-moon_forest_svg/dark.svg");
   transition: opacity 1s linear;
 }
 .forest__switch {

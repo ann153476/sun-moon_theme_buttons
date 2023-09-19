@@ -1,0 +1,40 @@
+.sun-moon_rotate {
+  width: 30vw;
+  border-radius: 50px;
+  border: none;
+  overflow: hidden;
+  position: relative;
+}
+.s-m-r_switch {
+  background-color: #f6d35a;
+  border-radius: 50%;
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  /* transform: translateX(100%); */
+}
+.moon__dots {
+  position: absolute;
+  height: 100%;
+  left: 0;
+}
+.sm-stars {
+  height: 100%;
+  position: absolute;
+  right: -10%;
+  top: 0;
+  object-fit: contain;
+  transition: all 1s linear;
+}
+.s-m_cloud1 {
+  position: absolute;
+  bottom: -5%;
+  left: 20%;
+  width: 40%;
+}
+.s-m_cloud2 {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  width: 40%;
+}

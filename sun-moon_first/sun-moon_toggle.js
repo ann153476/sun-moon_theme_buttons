@@ -27,19 +27,21 @@ function ifisDarkMode() {
     sun.style.opacity = "0";
     moon.style.opacity = "1";
     mySwitch.style.transform = "translateX(100%)";
-    text.style.color = "white";
-    body.style.backgroundColor = "black";
     smStars.style.transform = "translateY(0%)";
     smClouds.style.transform = "translateY(100%)";
+    //
+    text.style.color = "white";
+    body.style.backgroundColor = "black";
   } else {
     btnBac.style.opacity = "0";
     sun.style.opacity = "1";
     moon.style.opacity = "0";
     mySwitch.style.transform = "translateX(0%)";
-    text.style.color = "black";
-    body.style.backgroundColor = "white";
     smStars.style.transform = "translateY(100%)";
     smClouds.style.transform = "translateY(0%)";
+    //
+    text.style.color = "black";
+    body.style.backgroundColor = "white";
   }
 }
 ifisDarkMode();
@@ -53,7 +55,6 @@ function functionClick() {
   btnBac.style.transition = "opacity 1s linear";
   smStars.style.transition = "transform 1s linear";
   smClouds.style.transition = "transform 1s linear";
-  console.log(toggleButton.style.transition);
   ifisDarkMode();
 }
 
