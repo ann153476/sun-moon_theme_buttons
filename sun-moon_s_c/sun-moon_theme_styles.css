@@ -42,6 +42,7 @@
   transform: translateY(100%);
 }
 .s-m_bac__l {
+  pointer-events: none;
   background-image: linear-gradient(#2b4485, #afcaff);
   width: 100%;
   height: 100%;
