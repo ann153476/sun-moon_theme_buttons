@@ -6,8 +6,11 @@ const smCloud1 = document.querySelector(".s-m_cloud1");
 const smCloud2 = document.querySelector(".s-m_cloud2");
 
 let isDarkTheme = localStorage.getItem("isDarkTheme") === "true" || false;
-
+//
 smBTN.style.height = smBTN.offsetWidth * 0.45 + "px";
+console.log(smBTN.offsetWidth, "1 Width");
+console.log(smBTN.offsetHeight, "1 Height");
+smBTN.style.borderRadius = smBTN.offsetWidth / 2 + "px";
 smSwitch.style.height = smBTN.offsetHeight * 0.9 + "px";
 smSwitch.style.width = smBTN.offsetHeight * 0.9 + "px";
 

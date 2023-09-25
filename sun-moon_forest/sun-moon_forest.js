@@ -5,12 +5,17 @@ const forestSwitch = document.querySelector(".forest__switch");
 let isDark = localStorage.getItem("isDarkForestBTN") === "true" || false;
 let heightToggleF;
 function functionStart() {
+  //
   toggleBtnForest.style.height = toggleBtnForest.offsetWidth * 0.45 + "px";
+  console.log(toggleBtnForest.offsetWidth, "3 Width");
+  console.log(toggleBtnForest.offsetHeight, "3 Height");
+  toggleBtnForest.style.borderRadius = toggleBtnForest.offsetWidth / 2 + "px";
   forestSwitch.style.height = toggleBtnForest.offsetHeight * 0.9 + "px";
   forestSwitch.style.width = toggleBtnForest.offsetHeight * 0.9 + "px";
-  toggleBtnForest.style.borderRadius = toggleBtnForest.offsetWidth / 2 + "px";
+
   forestSwitch.style.transition = "none";
   bacForest.style.transition = "none";
+
   ifIsDark();
   setTimeout(() => {
     forestSwitch.style.transition = "transform 1s linear";

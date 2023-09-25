@@ -1,6 +1,6 @@
 .sun-moon__theme {
   /* change only width for change size of toggle */
-  width: 30vw;
+  width: 50vw;
   /*  */
   cursor: pointer;
   overflow: hidden;
@@ -19,17 +19,17 @@
   background-repeat: no-repeat;
   background-position: top 20% right 30%, bottom 20% right 40%,
     bottom 40% right 10%;
-  background-image: url("../sun-moon_first/sun-moon_theme_svg/cloud.svg"),
-    url("../sun-moon_first/sun-moon_theme_svg/cloud.svg"),
-    url("../sun-moon_first/sun-moon_theme_svg/cloud.svg");
+  background-image: url("../sun-moon_s_c/sun-moon_theme_svg/cloud.svg"),
+    url("../sun-moon_s_c/sun-moon_theme_svg/cloud.svg"),
+    url("../sun-moon_s_c/sun-moon_theme_svg/cloud.svg");
   transform: translateY(100%);
 }
 .s-m_stars {
-  background-image: url("../sun-moon_first/sun-moon_theme_svg/Star1.svg"),
-    url("../sun-moon_first/sun-moon_theme_svg/Star2.svg"),
-    url("../sun-moon_first/sun-moon_theme_svg/Star3.svg"),
-    url("../sun-moon_first/sun-moon_theme_svg/Star4.svg"),
-    url("../sun-moon_first/sun-moon_theme_svg/Star5.svg");
+  background-image: url("../sun-moon_s_c/sun-moon_theme_svg/Star1.svg"),
+    url("../sun-moon_s_c/sun-moon_theme_svg/Star2.svg"),
+    url("../sun-moon_s_c/sun-moon_theme_svg/Star3.svg"),
+    url("../sun-moon_s_c/sun-moon_theme_svg/Star4.svg"),
+    url("../sun-moon_s_c/sun-moon_theme_svg/Star5.svg");
   background-position: top 20% left 30%, bottom 20% left 40%,
     bottom 40% left 10%, top 10% left 15%, top 60% left 30%;
   background-repeat: no-repeat;

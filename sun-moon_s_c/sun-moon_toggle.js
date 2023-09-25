@@ -7,11 +7,15 @@ const smStars = document.querySelector(".s-m_stars");
 const smClouds = document.querySelector(".s-m_clouds");
 
 const body = document.body;
+//
+toggleButton.style.height = toggleButton.offsetWidth * 0.45 + "px";
+console.log(toggleButton.offsetWidth, "2 Width");
+console.log(toggleButton.offsetHeight, "2 Height");
+toggleButton.style.borderRadius = toggleButton.offsetWidth / 2 + "px";
+btnBac.style.borderRadius = toggleButton.offsetWidth / 2 + "px";
+// mySwitch.style.height = toggleButton.offsetHeight * 0.9 + "px";
+// mySwitch.style.width = toggleButton.offsetHeight * 0.9 + "px";
 
-let heightToggle = toggleButton.offsetWidth * 0.45;
-toggleButton.style.height = heightToggle + "px";
-toggleButton.style.borderRadius = heightToggle / 2 + "px";
-btnBac.style.borderRadius = heightToggle / 2 + "px";
 mySwitch.style.transition = "none";
 sun.style.transition = "none";
 moon.style.transition = "none";
